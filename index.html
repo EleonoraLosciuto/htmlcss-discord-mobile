@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head including title icon, bootstrap icon, link to css and Google Fonts -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Font: DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- Font: Sigmar -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+
+<!-- body: header with banner and main including the download screen and the two "cards" -->
+<body>
+
+    <div id="viewport"> <!-- I create a container for my viewport -->
+        <header id="banner">
+            <img src="img/banner.png" alt="Discord Banner">
+        </header>
+        <!-- classes: I create a container for "the download card" small-text and big-text classes for CSS purposes -->
+        <main>
+            <div class="download-card">
+                <h1 class="big-text">Group chat that's all fun & games</h1>
+                <p id="h1-small-text">
+                <!-- this class is for the paragraph below h1 only, considering the text align is different from the ones of the card (justify VS left). Anyways, I maintain a similar name since the difference is only the alignement -->
+                    Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play and hang out
+                </p>
+                <button class="buttons" id="download" href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64"><img src="./img/cloud-download.svg" alt="Icon Download"> Download for Windows</button>
+                <button class="buttons" id="open" href="https://discord.com/">Open Discord in your browser</button>
+            </div>
+            <!-- I create classes for cards, card icons and card images-->
+            <section class="card">
+                <img class="card-icon" src="./img/discord_cube.png" alt="Discord Cube">
+                <h2 class="big-text">
+                    Make your group chats more fun
+                </h2>
+                <p class="small-text">
+                    Use custom emoji, stickers, soundboard effects and more to add to your personality to your voice, video or text chat. Set your avatar and a custom status, and write your own profile to show up your chat your way.
+                </p>
+                <img src="img/discord_demo.png" alt="Discord Demo">
+            </section>
+            <section class="card">
+                <img class="card-icon" src="img/eyes.png" alt="Discord eyes">
+                <h2 class="big-text">
+                    Make your group chats more fun
+                </h2>
+                <p class="small-text">
+                    Use custom emoji, stickers, soundboard effects and more to add to your personality to your voice, video or text chat. Set your avatar and a custom status, and write your own profile to show up your chat your way.
+                </p>
+                <img src="./img/streamer_demo.png" alt="Streamer Demo">
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
