@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px; /*I set REM*/
+}
+
 #viewport {
     max-width: 512px;
     min-width: 400px;
@@ -14,12 +18,37 @@
 }   
 
 header {
-    height: 315px;
+    height: 269px;
     background-image: url(../img/banner.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .big-text   {
-    
+    color: white;
+    font-family: "Sigmar", sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
 }
+
+.small-text {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.8rem;
+}
+
+.download-card {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 0 auto;
+    width: 384px;
+}
+
+.card {
+    padding: 5rem 0.7rem;
+    margin: 0 auto;
+    width: 400px;
+}
+
+
+
