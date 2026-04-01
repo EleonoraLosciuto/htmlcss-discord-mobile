@@ -1,14 +1,18 @@
-/**/
 /*CSS reset*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 html {
     font-size: 16px; /*I set REM*/
 }
+
+
+/*Set max width and min width + center and background of viewport*/
 
 #viewport {
     max-width: 512px;
@@ -17,12 +21,18 @@ html {
     background-image: linear-gradient(to right, #2328a5, #191D7B);
 }   
 
+
+/*Banner - Note: to define height I used dev tools*/
+
 header {
     height: 269px;
     background-image: url(../img/banner.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+
+/*text styles for big text and small text*/
 
 .big-text   {
     color: white;
@@ -37,18 +47,57 @@ header {
     font-size: 1.8rem;
 }
 
+
+/*Download card - set dimension, center and padding top*/
+
 .download-card {
     text-align: center;
-    padding-top: 6rem;
     margin: 0 auto;
+    padding-top: 6rem;
     width: 384px;
 }
 
-.card {
-    padding: 5rem 0.7rem;
-    margin: 0 auto;
-    width: 400px;
+
+/*Buttons style - see below comment for width issue*/
+
+.buttons {
+    display: block;
+    font-size: large;
+    width: 380px;
+    padding: 2rem 0;
+    border-radius: 12px;
+/*Nota: dando width auto non prendeva tutta la riga, solo copriva contenuto
+utilizzando parent (download-card) relative e child absolute con left: 0 e right: 0
+i due pulsanti si sovrapponevano*/
 }
 
+#download {
+    margin-bottom: 10px;
+}
+
+#open {
+    background-color:#5865F2;
+    color: white;
+}
+
+
+/*Style for the 2 cards*/
+
+.card {
+    padding: 3rem 3rem;
+    margin: 60px auto;
+    width: 400px;
+    background-color: #5865F2;
+    border-radius: 20px;
+}
+
+
+/*Style for the 2 images inside the cards*/
+
+.img-card { 
+    height: 50%;
+    width: 100%;
+    border-radius: 20px;
+}
 
 
