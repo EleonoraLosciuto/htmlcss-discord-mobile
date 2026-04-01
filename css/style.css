@@ -1,0 +1,25 @@
+/**/
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#viewport {
+    max-width: 512px;
+    min-width: 400px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #2328a5, #191D7B);
+}   
+
+header {
+    height: 315px;
+    background-image: url(../img/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.big-text   {
+    
+}
