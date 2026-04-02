@@ -68,11 +68,18 @@ header {
 utilizzando parent (download-card) relative e child absolute con left: 0 e right: 0
 i due pulsanti si sovrapponevano - per cui avrei dovuto spostare il pulsante di open in browser più in bass*/
     padding: 2rem 0;
+    border: none;
     border-radius: 12px;
+}
+
+/* Tryied to remove underlne for link - hover - did not work */
+a:hover {
+  text-decoration: none;
 }
 
 #download {
     margin-bottom: 10px;
+    color: black;
 }
 
 #open {
@@ -87,7 +94,7 @@ i due pulsanti si sovrapponevano - per cui avrei dovuto spostare il pulsante di 
     padding: 3rem 3rem;
     margin: 60px auto;
     width: 400px;
-    background-color: #5865F2;
+    background-image: linear-gradient(to right, #7a7eb1, #5865F2); /*BONUS: I change from backgroud-color: #5865F2 to this*/
     border-radius: 20px;
     position: relative;
 }
@@ -101,6 +108,9 @@ i due pulsanti si sovrapponevano - per cui avrei dovuto spostare il pulsante di 
     border-radius: 20px;
 }
 
+
+/* Initial CSS for ICON on the top left
+
 .card-icon {
     width: 25%;
     padding: 0;
@@ -108,6 +118,20 @@ i due pulsanti si sovrapponevano - per cui avrei dovuto spostare il pulsante di 
     top: -2rem;
     left: 5rem;
     translate: 0 -30%;
+}
+
+*/
+
+/* BONUS: icons on the top center */
+
+#disc-cube, #eyes {
+    position: absolute;
+    width: 25%;
+    padding: 0;
+    top: 0;
+    translate: 0 -50%;
+    left: 135px;
+    right: 135px; /*I calculated the 135px from left and right as (340px card width + 30px card padding - 100px icon width) / 2 */ 
 }
 
 

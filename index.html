@@ -14,17 +14,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <!-- Font: Sigmar -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sigmar&display=swap" rel="stylesheet">
 </head>
 
-<!-- body: header with banner and main including the download screen and the two "cards" -->
+<!-- body: HEADER with banner and MAIN including the download screen and the two "cards" -->
 <body>
 
     <div id="viewport"> <!-- I create a container for my viewport -->
         <header id="banner"></header>
-        <!-- classes: I create a container for "the download card" small-text and big-text classes for CSS purposes -->
+        <!-- classes: I create a container for "the download card" and small-text and big-text classes for CSS purposes -->
         <main>
             <div class="download-card">
                 <h1 class="big-text">Group chat that's all fun & games</h1>
@@ -35,7 +35,7 @@
                 <a href="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64"><button class="buttons" id="download"><img src="./img/cloud-download.svg" alt="Icon Download"> Download for Windows</button></a>
                 <a href="https://discord.com/"><button class="buttons" id="open">Open Discord in your browser</button></a>
             </div>
-            <!-- I create classes for cards, card icons and card images-->
+            <!-- I use section for each card, I create classes for: cards, card icons and card images-->
             <section class="card">
               <img class="card-icon" id="disc-cube" src="./img/discord_cube.png" alt="Discord Cube">
               <h2 class="big-text">
@@ -44,9 +44,10 @@
                 <p class="small-text">
                     Use custom emoji, stickers, soundboard effects and more to add to your personality to your voice, video or text chat. Set your avatar and a custom status, and write your own profile to show up your chat your way.
                 </p>
-                <figure>
-                    <img class="img-card" src="img/discord_demo.png" alt="Discord Demo">
-                </figure>
+                <!-- BONUS: I had previously added images inside figure tag and defined img-card class -  keep the class and change for video tag - I set as autoplay muted -->
+                <video class="img-card" autoplay muted>
+                    <source src="./video/video_demo.mp4" type="video/mp4">
+                </video>
             </section>
             
             <section class="card">
@@ -57,10 +58,13 @@
                 <p class="small-text">
                     Use custom emoji, stickers, soundboard effects and more to add to your personality to your voice, video or text chat. Set your avatar and a custom status, and write your own profile to show up your chat your way.
                 </p>
-                <figure>
-                    <img class="img-card" src="./img/streamer_demo.png" alt="Streamer Demo">
-                </figure>
+                <!-- BONUS: I had previously added images inside figure tag and defined img-card class -  keep the class and change for video tag - I set as autoplay muted -->
+                <video class="img-card" autoplay muted> 
+                    <source src="./video/streamer.mp4" type="video/mp4">
+                </video>
+
             </section>
+            <!-- added a footer to add some space below the last card and see the margin -->
             <footer>
                 Made with &hearts;
             </footer>
