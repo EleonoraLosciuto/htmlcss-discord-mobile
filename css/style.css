@@ -70,6 +70,7 @@ i due pulsanti si sovrapponevano - per cui avrei dovuto spostare il pulsante di 
     padding: 2rem 0;
     border: none;
     border-radius: 12px;
+    margin-bottom: 10px;
 }
 
 /* Tryied to remove underlne for link - hover - did not work */
@@ -91,7 +92,7 @@ a:active {
 
 
 #download {
-    margin-bottom: 10px;
+    background-color: white;
     color: black;
 }
 
