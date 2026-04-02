@@ -73,9 +73,22 @@ i due pulsanti si sovrapponevano - per cui avrei dovuto spostare il pulsante di 
 }
 
 /* Tryied to remove underlne for link - hover - did not work */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: none;
 }
+
+a:active {
+  text-decoration: none;
+}
+
 
 #download {
     margin-bottom: 10px;
