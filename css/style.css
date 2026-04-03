@@ -19,6 +19,7 @@ html {
     min-width: 400px;
     margin: 0 auto;
     background-image: linear-gradient(to right, #2328a5, #191D7B);
+    color: white;
 }   
 
 
@@ -35,14 +36,12 @@ header {
 /*text styles for big text and small text*/
 
 .big-text   {
-    color: white;
     font-family: "Sigmar", sans-serif;
     text-transform: uppercase;
     font-size: 4rem;
 }
 
 .small-text {
-    color: white;
     font-family: "DM Sans", sans-serif;
     font-size: 1.8rem;
 }
@@ -66,28 +65,23 @@ header {
     width: 380px;
 /*Nota: dando width auto non prendeva tutta la riga, solo copriva contenuto
 utilizzando parent (download-card) relative e child absolute con left: 0 e right: 0
-i due pulsanti si sovrapponevano - per cui avrei dovuto spostare il pulsante di open in browser più in bass*/
+i due pulsanti si sovrapponevano - per cui avrei dovuto spostare il pulsante di open in browser più in basso*/
     padding: 2rem 0;
     border: none;
     border-radius: 12px;
+    margin: 0 auto;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
-/* Tryied to remove underlne for link - hover - did not work */
-a:link {
-  text-decoration: none;
+.buttons:hover {
+    text-decoration: none;
 }
-
-a:visited {
-  text-decoration: none;
+.buttons:focus {
+    text-decoration: none;
 }
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
+.buttons:active {
+    text-decoration: none;
 }
 
 
@@ -106,8 +100,7 @@ a:active {
 
 .card {
     padding: 3rem 3rem;
-    margin: 60px auto;
-    width: 400px;
+    margin: 60px 40px;
     background-image: linear-gradient(to right, #7a7eb1, #5865F2); /*BONUS: I change from backgroud-color: #5865F2 to this*/
     border-radius: 20px;
     position: relative;
@@ -140,12 +133,11 @@ a:active {
 
 #disc-cube, #eyes {
     position: absolute;
-    width: 25%;
+    width: 108px;
     padding: 0;
     top: 0;
     translate: 0 -50%;
-    left: 135px;
-    right: 135px; /*I calculated the 135px from left and right as (340px card width + 30px card padding - 100px icon width) / 2 */ 
+    left: 162px; /*I calculated the 162px from left and right as (372px card width + 2*(30)px card padding - 108px icon width) / 2 - then I checked by using right 162px with dev tools */ 
 }
 
 
